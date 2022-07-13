@@ -3,7 +3,6 @@ import Nav from "../components/Nav";
 import Hero from "../components/Hero";
 import styles from "../styles/Page.module.css";
 import data from "../data";
-import Image from "next/image";
 const ID = ({ project }) => {
   return (
     <div style={{ position: "relative" }}>
@@ -21,21 +20,7 @@ const ID = ({ project }) => {
             alt={project.title}
             className={styles.img}
           />
-          <img
-            src={`${project.featureIMG}`}
-            alt={project.title}
-            className={styles.img}
-          />{" "}
-          <img
-            src={`${project.featureIMG}`}
-            alt={project.title}
-            className={styles.img}
-          />{" "}
-          <img
-            src={`${project.featureIMG}`}
-            alt={project.title}
-            className={styles.img}
-          />
+
           <button type="button" className={styles.btn}>
             <a href={`${project.link}`} target="_blank" rel="noreferrer">
               View Site
