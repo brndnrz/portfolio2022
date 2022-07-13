@@ -3,6 +3,8 @@ import Nav from "../components/Nav";
 import Footer from "../components/Footer";
 import ProjectFeature from "../components/ProjectFeature";
 import Hero from "../components/Hero";
+import data from "../data";
+import styles from "../styles/Home.module.css";
 
 export default function Home() {
   return (
@@ -18,11 +20,10 @@ export default function Home() {
 
       <Nav />
       <Hero />
-      <div className="mx-auto md:lg:grid md:lg:grid-cols-2 md:lg:w-5/6 md:lg:gap-2 mb-24">
-        <ProjectFeature />
-        <ProjectFeature />
-        <ProjectFeature />
-        <ProjectFeature />
+      <div className={styles.featureList}>
+        {data.map((project) => {
+          return <ProjectFeature key={project.id} project={project} />;
+        })}
       </div>
       <Footer />
     </div>

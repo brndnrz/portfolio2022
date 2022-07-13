@@ -1,0 +1,61 @@
+.footer {
+  border: solid 2px var(--grey-color);
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  height: 500px;
+  position: relative;
+}
+
+.info {
+  padding-top: 2.5rem;
+  padding-left: 2.5rem;
+  line-height: 1.75rem;
+}
+
+.title {
+  width: 100%;
+  padding-bottom: 0.625rem;
+  font-family: "Inter";
+}
+
+.p {
+  width: 80%;
+  color: var(--paragraph-color);
+  font-family: "Inter";
+}
+
+.logo {
+  cursor: pointer;
+  text-align: end;
+  margin-right: 2.5rem;
+  font-size: 100px;
+  font-family: "Questrial";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+@media (min-width: 768px) {
+  .p {
+    width: 60%;
+  }
+}
+
+@media (min-width: 976px) {
+  .footer {
+    height: 650px;
+  }
+
+  .info {
+    padding-top: 4rem;
+    padding-left: 4rem;
+  }
+
+  .p {
+    width: 40%;
+  }
+
+  .logo {
+    font-size: 160px;
+  }
+}
