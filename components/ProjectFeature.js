@@ -11,6 +11,7 @@ const ProjectFeature = ({ project }) => {
           src={`${project.featureIMG}`}
           layout="fill"
           className={styles.img}
+          alt={project.title}
         />
         <h3 className={styles.h3}>{project.title}</h3>
         <BsArrowUpRightCircle className={styles.icon} />
